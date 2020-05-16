@@ -1,0 +1,25 @@
+h1
+ font-weight: 100
+ 
+p
+ padding: 1em
+
+.logo
+ background-color: $secundaire-kleur
+ display: inline-block ///dan kun je vanwege inline-block ook nog een padding aangeven
+ font-size: 1.8em
+ padding: .3em
+ color: darken($secundaire-kleur, $amount5)
+
+.container
+ position: relative
+ left: 0
+ @include transition($eigenschap)
+
+section
+ color: $secondaire-kleur-donker
+
+ h2
+  font-size: 2em
+  padding: 1em
+  text-align: center

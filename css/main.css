@@ -1,0 +1,128 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+* {
+  margin: 0;
+  padding: 0; }
+
+main {
+  padding: 0 2em; }
+
+header {
+  background-color: #2859BC;
+  color: #ffffff;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 4px solid #009a00; }
+  header h1 {
+    font-weight: 100; }
+  header p {
+    padding: 1em; }
+
+h1 {
+  font-weight: 100; }
+
+p {
+  padding: 1em; }
+
+.logo {
+  background-color: #81D742;
+  display: inline-block;
+  font-size: 1.8em;
+  padding: 0.3em;
+  color: #73d32d; }
+
+.container {
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.6s ease-in-out;
+  -o-transition: left 0.6s ease-in-out;
+  transition: left 0.6s ease-in-out; }
+
+section {
+  color: #48592D; }
+  section h2 {
+    font-size: 2em;
+    padding: 1em;
+    text-align: center; }
+
+nav {
+  background-color: #AAA;
+  position: absolute; }
+  nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 0.5em 0.5em 2em;
+    border-bottom: 1px solid green;
+    color: green; }
+    nav a.actief {
+      border-bottom: 4px solid green; }
+
+#haal-menu:checked ~ .container {
+  left: 10em; }
+
+#haal-menu:checked ~ .menu-halen .fa-times {
+  display: inline-block; }
+
+#haal-menu:checked ~ .menu-halen .fa-bars {
+  display: none; }
+
+.fa-bars {
+  display: inline-block; }
+
+.fa-times {
+  display: none; }
+
+#haal-menu {
+  display: none; }
+
+.menu-halen {
+  float: right;
+  font-size: 1.5em;
+  padding: 0.3em 2rem 0.3em 5em;
+  cursor: pointer; }
+
+@media screen and (min-width: 750px) {
+  nav {
+    background-color: #AAA;
+    position: relative;
+    float: right;
+    width: auto;
+    text-align: right;
+    font-size: 1.3em; }
+    nav li {
+      display: inline-block; }
+    nav a {
+      display: inline-block;
+      padding: 0.5em 0.2em 0.5em 2em;
+      border-bottom: 0;
+      background-color: #ffffff; }
+      nav a:hover {
+        background-color: #F1F1F1; }
+
+  .container {
+    clear: both; } }
+.knop {
+  background-color: #81D742;
+  color: #ffffff;
+  font-size: 5em;
+  padding: 0.25em; }
+  .knop:hover {
+    color: blue; }
+  .knop-houder {
+    text-align: center;
+    padding: 1em 0 1.5em;
+    border-bottom: 1px solid blue; }
+
+footer {
+  background-color: #2859BC;
+  color: #ffffff;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 4px solid #009a00; }
+  footer p {
+    display: block;
+    padding: 2em 2em 2em; }
+  footer #validatie {
+    padding: 0 2em 2em;
+    text-align: right; }
+
+/*# sourceMappingURL=main.css.map */

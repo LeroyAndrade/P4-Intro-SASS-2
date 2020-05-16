@@ -1,0 +1,44 @@
+nav
+ background-color: #AAA
+ position: absolute
+ 
+ a
+  text-decoration: none
+  display: block
+  padding: .5em .5em .5em 2em
+  border-bottom: 1px solid $colorGreen
+  color: $colorGreen
+  
+  &.actief
+   border-bottom: 4px solid green
+
+
+
+#haal-menu:checked ~ .container
+ left: 10em
+ 
+#haal-menu:checked ~ .menu-halen .fa-times
+ display: inline-block
+
+#haal-menu:checked ~ .menu-halen .fa-bars
+ display: none
+
+
+.fa-bars
+ display: inline-block
+
+.fa-times
+ display: none
+ 
+#haal-menu
+ display: none
+
+
+.menu-halen
+ float: right
+ font-size: 1.5em
+ padding: .3em 2rem .3em 5em
+ cursor: pointer
+
+@media screen and (min-width: 750px)
+ @import "navHorizon"
